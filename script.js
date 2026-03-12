@@ -1,5 +1,5 @@
 /* ============================================
-   JMARK ENTERPRISES — Coming Soon JS
+   JMARK ENTERPRISES — JS
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
