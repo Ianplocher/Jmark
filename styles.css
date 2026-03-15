@@ -593,6 +593,167 @@ section.hero {
 }
 
 /* ============================================
+   PROJECT GALLERY
+   ============================================ */
+.gallery {
+    padding: 120px 0 140px;
+    background-color: var(--color-dark);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.gallery .section-tag {
+    color: var(--color-accent);
+}
+
+.gallery .section-title {
+    color: var(--color-white);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    aspect-ratio: 4/3;
+}
+
+.gallery-item-large {
+    grid-column: span 2;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(28, 29, 27, 0.85) 0%, transparent 50%);
+    display: flex;
+    align-items: flex-end;
+    padding: 24px;
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-label {
+    font-family: var(--font-primary);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-white);
+    letter-spacing: -0.01em;
+}
+
+/* --- Lightbox --- */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.lightbox.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.lightbox-img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.lightbox.active .lightbox-img {
+    transform: scale(1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    background: none;
+    border: none;
+    color: var(--color-white);
+    font-size: 40px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity var(--transition-fast);
+    line-height: 1;
+    z-index: 1001;
+}
+
+.lightbox-close:hover {
+    opacity: 1;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--color-white);
+    font-size: 32px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    z-index: 1001;
+}
+
+.lightbox-prev { left: 24px; }
+.lightbox-next { right: 24px; }
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    background: rgba(225, 45, 54, 0.3);
+    border-color: var(--color-accent);
+}
+
+.lightbox-caption {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-primary);
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* ============================================
    SERVICE AREA SECTION
    ============================================ */
 .service-area {
@@ -1055,6 +1216,18 @@ a.contact-item:hover {
         gap: 40px;
     }
 
+    .gallery {
+        padding: 80px 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item-large {
+        grid-column: span 2;
+    }
+
     .area-grid {
         grid-template-columns: 1fr;
         gap: 24px;
@@ -1088,6 +1261,24 @@ a.contact-item:hover {
     .services-grid {
         grid-template-columns: 1fr;
     }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item-large {
+        grid-column: span 1;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .lightbox-prev { left: 12px; }
+    .lightbox-next { right: 12px; }
 
     .hero-cta {
         flex-direction: column;
