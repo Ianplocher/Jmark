@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.jmarkconstruction.com/</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.jmarkconstruction.com/gallery/bathroom-before-after.jpg</image:loc>
+      <image:title>Bathroom Remodel Before and After - Jmark Enterprises</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.jmarkconstruction.com/gallery/bathroom-vanity-shower.jpg</image:loc>
+      <image:title>Modern Bathroom Vanity with Glass Shower</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.jmarkconstruction.com/gallery/shower-marble-tile.jpg</image:loc>
+      <image:title>Marble Tile Walk-In Shower</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.jmarkconstruction.com/gallery/kitchen-island.jpg</image:loc>
+      <image:title>Kitchen Island Remodel with Marble Countertop</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.jmarkconstruction.com/gallery/powder-room.jpg</image:loc>
+      <image:title>Custom Powder Room with Gold Fixtures</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.jmarkconstruction.com/gallery/hex-tile-floor.jpg</image:loc>
+      <image:title>Black Hexagonal Marble Tile Bathroom Floor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.jmarkconstruction.com/gallery/craftsman-kitchen-wide.jpg</image:loc>
+      <image:title>Craftsman Style Kitchen Remodel</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.jmarkconstruction.com/gallery/craftsman-kitchen-cabinets.jpg</image:loc>
+      <image:title>Custom Craftsman Kitchen Cabinetry</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.jmarkconstruction.com/gallery/vanity-closeup.jpg</image:loc>
+      <image:title>Double Vanity with Quartz Countertop</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.jmarkconstruction.com/gallery/bathroom-doorway.jpg</image:loc>
+      <image:title>Full Bathroom Renovation</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.jmarkconstruction.com/gallery/shower-before-after.jpg</image:loc>
+      <image:title>Shower Remodel Before and After</image:title>
+    </image:image>
+  </url>
+</urlset>
